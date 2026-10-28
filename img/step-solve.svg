@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="180" viewBox="0 0 280 180">
+<!-- 解く: ひらめいたら、答えの欄に字を入れる（字は書かず、波の線で表す） -->
+<rect width="280" height="180" rx="22" fill="#3355D6"/>
+<path d="M108 50 L100 50 M113.8 31.6 L107.2 27 M125 21.7 L121.2 14.7 M140 18 L140 10 M155 21.7 L158.8 14.7 M166.2 31.6 L172.8 27 M172 50 L180 50" fill="none" stroke="#FFC83D" stroke-width="3.5" stroke-linecap="round"/>
+<circle cx="140" cy="50" r="23" fill="#FFC83D" stroke="#1A2350" stroke-width="3"/>
+<path d="M133 56 Q133 44 140 50 Q147 44 147 56" fill="none" stroke="#1A2350" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="130" y="73" width="20" height="13" rx="3.5" fill="#FFFFFF" stroke="#1A2350" stroke-width="3"/>
+<path d="M86 35 Q87.5 44.5 97 46 Q87.5 47.5 86 57 Q84.5 47.5 75 46 Q84.5 44.5 86 35 Z" fill="#FFFFFF" stroke="#1A2350" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M206 66 Q207 73 214 74 Q207 75 206 82 Q205 75 198 74 Q205 73 206 66 Z" fill="#FFFFFF" stroke="#1A2350" stroke-width="2.4" stroke-linejoin="round"/>
+<rect x="22" y="104" width="170" height="50" rx="16" fill="#FFFFFF" stroke="#1A2350" stroke-width="3"/>
+<rect x="34" y="115" width="28" height="28" rx="7" fill="#F4F6FD" stroke="#B9C2E6" stroke-width="2"/>
+<rect x="68" y="115" width="28" height="28" rx="7" fill="#F4F6FD" stroke="#B9C2E6" stroke-width="2"/>
+<rect x="102" y="115" width="28" height="28" rx="7" fill="#F4F6FD" stroke="#B9C2E6" stroke-width="2"/>
+<rect x="136" y="115" width="28" height="28" rx="7" fill="#F4F6FD" stroke="#B9C2E6" stroke-width="2"/>
+<path d="M40 131 Q44 122 48 129 T56 127" fill="none" stroke="#1A2350" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M74 131 Q78 122 82 129 T90 127" fill="none" stroke="#1A2350" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M108 131 Q112 122 116 129 T124 127" fill="none" stroke="#1A2350" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M150 121 L150 137" fill="none" stroke="#3355D6" stroke-width="3" stroke-linecap="round"/>
+<rect x="204" y="108" width="54" height="50" rx="16" fill="#1A2350"/>
+<rect x="204" y="104" width="54" height="50" rx="16" fill="#FFFFFF" stroke="#1A2350" stroke-width="3"/>
+<path d="M219 129 L227 137 L243 120" fill="none" stroke="#3355D6" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
