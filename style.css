@@ -446,6 +446,8 @@ main { display: block; isolation: isolate; }
 .foot__nav a { color: var(--label); text-decoration: none; display: inline-flex; align-items: center; gap: 6px; min-height: 44px; }
 .foot__nav a:hover { color: var(--primary-text); text-decoration: underline; }
 .foot__nav svg { width: 20px; height: 20px; flex-shrink: 0; }
+/* Apple の商標の表記（バッジを置いたページの足に 1 回） */
+.foot__legal { flex-basis: 100%; max-width: 54em; font-size: 12px; font-weight: 500; line-height: 1.7; letter-spacing: 0.02em; color: var(--sub); }
 
 /* ---------- トップ ---------- */
 
@@ -481,24 +483,17 @@ main { display: block; isolation: isolate; }
 .duo p { font-size: 16px; line-height: 1.7; }
 .duo .duo__lead { font-size: 17px; font-weight: 800; line-height: 1.6; letter-spacing: 0.02em; }
 
-/* App Store の札。公開前は「近日公開」（押せない＝破線・影なし） */
-.store { display: flex; justify-content: center; }
-.store-soon {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  min-height: 56px;
-  padding: 8px 20px 8px 16px;
-  border: 2.5px dashed var(--locked-line);
-  border-radius: 20px;
-  background: var(--tint);
-  color: var(--label);
-  font-size: 16px;
-  font-weight: 800;
-  letter-spacing: 0.04em;
-}
-.store-soon svg { width: 22px; height: 22px; flex-shrink: 0; color: var(--sub); }
-.store-soon .en { font-family: var(--font-en); font-weight: 600; letter-spacing: 0.01em; }
+/* App Store のバッジ。絵は Apple の公式の物（img/app-store-badge-ja.svg）をそのまま置く。
+   Apple の決まり（App Store Marketing Guidelines）: 色・形・字を変えない（影・ふち・透明度・hover の色も足さない）。
+   動かさない。高さは画面で 40px 以上。周りに高さの 1/4 の余白（字や絵を入れない）。1 ページに 1 つ。
+   トップは 56px（余白 14px 以上）、サポートは小さく 44px（余白 11px 以上）。 */
+.store { display: grid; justify-items: center; gap: 18px; padding-top: 4px; }
+.store__badge { display: block; line-height: 0; border-radius: 10px; }
+.store__badge img { width: auto; height: 56px; }
+.store__note { font-size: 14px; line-height: 1.6; color: var(--sub); letter-spacing: 0.04em; text-align: center; }
+.store-mini { margin-top: 20px; }
+.store-mini .store__badge { display: inline-block; }
+.store-mini .store__badge img { height: 44px; }
 
 .section { margin-top: 64px; }
 .section__lead { max-width: var(--measure); margin-bottom: 20px; }
@@ -822,7 +817,9 @@ main { display: block; isolation: isolate; }
   .hero__art { width: 100%; max-width: 460px; justify-self: center; }
   .hero__sub { font-size: 19px; }
   .logo--hero { font-size: 84px; }
-  .store { justify-content: flex-start; }
+  .store { justify-items: start; }
+  .store__badge img { height: 60px; }
+  .store__note { text-align: left; }
   .section { margin-top: 88px; }
   .h-section { font-size: 28px; }
   .policy { grid-template-columns: 280px minmax(0, 1fr); gap: 48px; }

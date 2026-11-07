@@ -39,11 +39,11 @@
         <p>ほかの iPhone でも<span class="nb">最後まで遊べます。</span></p>
       </div>
     </div>
-    <div class="store rise rise--3">
-      <!-- App Store の札（このページのこの 1 か所だけ）。公開したら、このコメントの中の <a> をコメントの外に出し、
-           このコメントのすぐ下の <p class="store-soon"> を消す。
-           <a class="btn btn--large" href="https://apps.apple.com/jp/app/id6828090590"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5 L18.5 12 L8 18.5 Z" fill="currentColor" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/></svg><span>App Store で見る</span></a> -->
-      <p class="store-soon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M12 7.5 L12 12 L15 14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span><span class="en">App Store</span> で近日公開</span></p>
+    <div class="store">
+      <!-- App Store のバッジ（このページのこの 1 か所だけ）。絵は Apple の公式の物（img/app-store-badge-ja.svg）をそのまま使う。
+           Apple の決まり: 色・形・字を変えない。動かさない（.rise を付けない）。高さは 40px 以上。周りに高さの 1/4 の余白をとる。 -->
+      <a class="store__badge" href="https://apps.apple.com/jp/app/id6828090590"><img src="img/app-store-badge-ja.svg" width="109" height="40" alt="App Store からダウンロード"></a>
+      <p class="store__note"><span class="nb">無料です（広告あり）。</span><span class="nb">iOS 26 以降の iPhone で遊べます。</span></p>
     </div>
   </div>
 </section>
@@ -139,6 +139,7 @@
         <li><a href="https://sora-endo-0912.github.io/"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="2.2" fill="none" stroke="currentColor" stroke-width="2.2"/><rect x="13.5" y="3.5" width="7" height="7" rx="2.2" fill="none" stroke="currentColor" stroke-width="2.2"/><rect x="3.5" y="13.5" width="7" height="7" rx="2.2" fill="none" stroke="currentColor" stroke-width="2.2"/><rect x="13.5" y="13.5" width="7" height="7" rx="2.2" fill="none" stroke="currentColor" stroke-width="2.2"/></svg>Sora Endo のアプリ一覧</a></li>
       </ul>
     </nav>
+    <p class="foot__legal"><span class="nb">Apple、Apple のロゴ、iPhone は、米国その他の国で登録された Apple Inc. の商標です。</span><span class="nb">App Store は Apple Inc. のサービスマークです。</span></p>
   </div>
 </footer>
 </body>
