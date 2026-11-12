@@ -495,6 +495,18 @@ main { display: block; isolation: isolate; }
 .store-mini .store__badge { display: inline-block; }
 .store-mini .store__badge img { height: 44px; }
 
+/* 宣伝の動画（トップの「動きで見る」）。縦 9:16・音なし・ループ。 */
+.movie { margin: 0; display: grid; justify-items: center; gap: 14px; }
+.movie__video {
+  width: min(78vw, 320px);
+  height: auto;
+  aspect-ratio: 9 / 16;
+  border: 3px solid var(--line);
+  border-radius: 24px;
+  background: #1B1838;
+}
+.movie__cap { font-size: 14px; line-height: 1.6; color: var(--sub); letter-spacing: 0.04em; text-align: center; }
+
 .section { margin-top: 64px; }
 .section__lead { max-width: var(--measure); margin-bottom: 20px; }
 

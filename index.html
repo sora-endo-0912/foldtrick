@@ -48,6 +48,16 @@
   </div>
 </section>
 
+<section class="section" aria-labelledby="movie-title">
+  <h2 id="movie-title" class="h-section">動きで見る</h2>
+  <figure class="movie">
+    <!-- 宣伝の動画（SNS・LP 用。promo-video の 20261111-foldtrick-duo-sns の lp_9x16_noaudio）。音なし・20 秒・ループ。
+         視差効果を減らす設定の人には自動で流さない（下の script）。 -->
+    <video class="movie__video" src="img/promo-duo.mp4" poster="img/promo-duo-poster.jpg" width="1080" height="1920" autoplay muted loop playsinline preload="metadata" aria-label="iPhone Duo を閉じたり開いたりすると、本の頁に夜がおりて灯籠に灯がともり、閉じた表紙に道が浮かぶ動画（音なし・20 秒）"></video>
+    <figcaption class="movie__cap"><span class="nb">iPhone Duo で遊んでいるところ</span><span class="nb">（音なし・20 秒）。</span><span class="nb">普通の iPhone では、</span><span class="nb">画面のボタンで閉じて開きます。</span></figcaption>
+  </figure>
+</section>
+
 <section class="section" aria-labelledby="story-title">
   <h2 id="story-title" class="h-section">ものがたり</h2>
   <div class="book">
@@ -142,5 +152,13 @@
     <p class="foot__legal"><span class="nb">Apple、Apple のロゴ、iPhone は、米国その他の国で登録された Apple Inc. の商標です。</span><span class="nb">App Store は Apple Inc. のサービスマークです。</span></p>
   </div>
 </footer>
+<script>
+// 視差効果を減らす設定の人には、動画を自動で流さず、再生ボタンを出す。
+(function () {
+  var v = document.querySelector('.movie__video');
+  if (!v || !window.matchMedia || !window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  v.removeAttribute('autoplay'); v.pause(); v.controls = true;
+})();
+</script>
 </body>
 </html>
